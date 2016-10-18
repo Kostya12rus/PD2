@@ -1,0 +1,43 @@
+{
+	"name": "P3D Mouse Mod",
+	"description": "All that was on the mouse has moved here",
+	"author": "P3DGroup and other",
+	"contact": "https://vk.com/p3dhack_payday",
+	"version": "1.0",
+	"priority": 100,
+	"persist_scripts": [
+		{
+			"global": "global",
+			"script_path": "global/fp.lua"
+		}
+	],
+	"keybinds": [
+		{
+			"keybind_id": "TELEPORT",
+			"name": "PENETRATIVE TELEPORT",
+			"description": "Bind at Middle Mouse Button or other button",
+			"script_path": "Mouse Mod/PENETRATIVE TELEPORT.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "SLOWMO",
+			"name": "SLOWMO",
+			"description": "Bind at Mouse Button or other button",
+			"script_path": "Mouse Mod/SLOWMO.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "aim_bot",
+			"name": "Aimbot",
+			"description": "on/off",
+			"script_path": "script/aimbot.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		}
+	]
+}
