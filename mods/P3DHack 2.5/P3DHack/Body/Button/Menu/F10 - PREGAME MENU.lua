@@ -8,7 +8,17 @@ local function give_cc(value)
 	local future = current + value
 	Global.custom_safehouse_manager.total = Application:digest_value(future, true)
 end
---Continental Coins
+	--Continental Coins
+	-- Progress all Trophies
+local function give_trophies()
+	for k, v in pairs(Global.custom_safehouse_manager.trophies) do
+		for foo, bar in pairs (v.objectives) do
+			managers.custom_safehouse:update_progress("progress_id", v.objectives[foo].progress_id, v.objectives[foo].max_progress)
+		end
+		managers.custom_safehouse:update_progress("progress_id", "trophy_stealth", 15)
+	end
+end
+--Progress all Trophies
 	-- LEVEL
 	local function change_level(level)
 		managers.experience:_set_current_level(level)
@@ -878,6 +888,7 @@ end
 	PreGameMenu:addOption('inventory_menu', 'Разблокировать материалы', {callback = unlock_items, callbackData = "materials"})
 	PreGameMenu:addOption('inventory_menu', 'Разблокировать текстуры', {callback = unlock_items, callbackData = "textures"})
 	PreGameMenu:addOption('inventory_menu', 'Разблокировать оружие', {callback = unlock_items, callbackData = "weapons"})
+	PreGameMenu:addOption('inventory_menu', 'Разблокировать все трофеи', {callback = give_trophies, closeMenu = true})
 	-- Inventory Menu Column 2
 	PreGameMenu:addInformationOption('inventory_menu', 'Другое', {textColor = Color.DodgerBlue})
 	PreGameMenu:addOption('inventory_menu', 'Удалить предметы с восклицательным знаком', {callback = remexclmark})

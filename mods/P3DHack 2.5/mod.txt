@@ -1,9 +1,9 @@
 {
 	"name": "P3DHack",
 	"description": "Very cool mod for you",
-	"author": "P3DHack\nSilentSeduction\nVex\nCredit later",
+	"author": "P3D Hack Group\nP3D Family\nThe3DReaL\nIamALS\nBLEATII\nSimon_GBBB\nYaPh1l\nMr_PaklZ\nAndrey_Murav'yov\nSticky\nstumpy3toes\nURAZ88\nSteenGooier\nHarfatus\ngir489\nhejoro\nSirgoodsmoke\nB1313\nbaldwin\nLazyOzzy\nOJSimpson\nxiang\nPierreDjays\nsiahi\nSlynderdale\nYanrishatum\nzephirot\n90e\nSilentSeduction\nSubsimple\nSimplity\nMaelform\nstumpy3toes\nTranscend\nKe007\nRandyButternubs\nand other!",
 	"contact": "https://vk.com/p3dhack_payday",
-	"version": "2.4 test blt bild",
+	"version": "BLT 1.4",
 	"priority": 100,
 	"hooks": [
 		{
@@ -29,10 +29,6 @@
 		{
 			"hook_id": "lib/managers/dialogmanager",
 			"script_path": "P3DHack/Body/Require/RatsMessage.lua"
-		},
-		{
-			"hook_id": "lib/managers/dlcmanager",
-			"script_path": "P3DHack/Body/Require/DLCUnlocker.lua"
 		},
 		{
 			"hook_id": "lib/managers/experiencemanager",

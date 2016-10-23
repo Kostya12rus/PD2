@@ -4,7 +4,7 @@ dofile(ModPath .."P3DHack/Body/Require/Tools/ConfigTools.lua") -- DO NOT REMOVE 
 -- Настройки лазера --
 -- Список доступных цветов
 AliceBlue, AntiqueWhite, Aqua, Aquamarine, Azure, Beige, Bisque, BlanchedAlmond, BlueViolet, Brown, BurlyWood, CadetBlue,
-Chartreuse, Chocolate, Coral, CornflowerBlue, Cornsilk, Crimson , Cyan, DarkBlue, DarkCyan, DarkGoldenRod, DarkGray,
+Chartreuse, Chocolate, Coral, CornflowerBlue, Cornsilk, Crimson, Cyan, DarkBlue, DarkCyan, DarkGoldenRod, DarkGray,
 DarkGreen, DarkKhaki, DarkMagenta, DarkOliveGreen, DarkOrange, DarkOrchid, DarkRed, DarkSalmon, DarkSeaGreen, DarkSlateBlue,
 DarkSlateGray, DarkTurquoise, DarkViolet, DeepPink, DeepSkyBlue, DimGray, DodgerBlue, FireBrick, ForestGreen, Fuchsia, Gainsboro,
 Gold, GoldenRod, Gray, GreenYellow, HoneyDew, HotPink, IndianRed, Indigo, Khaki, Lavender, LavenderBlush, LawnGreen, LemonChiffon, LightBlue,
@@ -65,7 +65,7 @@ Weapon
 Winch_Part
 'Random_Loot' -- спавнится случайная вещь из данного списка
 
--- Нефтяное дело ,доступные двигатели
+-- Нефтяное дело, доступные двигатели
 Engine_01, Engine_02, Engine_03, Engine_04, Engine_05, Engine_06, Engine_07, Engine_08, Engine_09, Engine_10, Engine_11, Engine_12
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Настройка клавиш для мыши --
@@ -100,11 +100,11 @@ P3DGroup_P3DHack = {
 	Auto_Pick_Card = false, --Выбирает случайную карту в конце ограбления
 
 	-- Нет паузы -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
-	Dropin_Pause_Remove = true, -- Удаляет паузу , когда игрок подключается к игре
+	Dropin_Pause_Remove = true, -- Удаляет паузу, когда игрок подключается к игре
 
 	-- FORCE ANY SKILL -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
 	-- Не дублировать навыки, приведет к аварии
-	Force_Skills = false,-- Разблокировка всех навыков без их прокачки
+	Force_Skills = false, -- Разблокировка всех навыков без их прокачки
 	
 	-- Бесплатные покупки -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
 	Favors = true, --Бесконечные очки планирования
@@ -123,24 +123,25 @@ P3DGroup_P3DHack = {
 	Job_Heat_Amount = 1.20, -- Настройте бонус к здоровью (По умолчанию 1.15 = 15%)
 
 	-- Авто-плита -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
-	Rats_Message = true, -- Показывает , что нужно в данный момент положить
+	Rats_Message = true, -- Показывает, что нужно в данный момент положить
 	-- Римские цифры для дурной репутации
-	Roman = true, -- Класические римские цифры для Дурной репутации
+	Roman = true, -- Класcические римские цифры для Дурной репутации
 
 	-- Стелс функции -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
 	Stealth_Mark_Civilians = true, -- Разрешить маркировку гражданских лиц в стелсе
 	Stealth_Mark_Civilians_Vocal = false, -- Разрешить крик , отмечая гражданских лиц в стелсе
 	Prioritize_Inspire_Shout = true, -- Разрешить подъем криком упавших товарищей
-	Stealth_Shout_Inspire = true, -- Разрешить подьем упавших товарищей
+	Stealth_Shout_Inspire = true, -- Разрешить подъем упавших товарищей
 
-	-- Не ждать рассчета опыта после окончания ограбления -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
-	Skip_End_Screen = true, -- Не ждать рассчета опыта после окончания ограбления
+	-- Не ждать подсчета опыта после окончания ограбления -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
+	Skip_End_Screen = true, -- Не ждать подсчета опыта после окончания ограбления
 
-	-- Стреяете сквозь... -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
-	Bullet_Penetration = true, -- Работает на все оружия , кроме ружий (Выберите ниже)
+	-- Стреляете сквозь... -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
+	Bullet_Penetration = true, -- Работает на все оружия, кроме ружий (Выберите ниже)
 	Bullet_Penetration_Enemy = true, -- Стреляете через врагов
 	Bullet_Penetration_Shield = true, -- Стреляете сквозь щиты
 	Bullet_Penetration_Wall = true, -- Стреляете сквозь стены
+	
 	Weapon_Laser = true, -- Желаете изменить цвет лазера?
 	Weapon_Laser_Color = Color.SkyBlue, -- Цвет лазера
 
@@ -149,7 +150,7 @@ P3DGroup_P3DHack = {
 	MaxWeaponRows = 100, -- Слоты для оружий
 
 	-- Зиплайн -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
-	Zipline_Drop = true, -- Можете бросать сумки , когда вы на Zip-line----------------
+	Zipline_Drop = true, -- Можете бросать сумки, когда вы на Zip-line----------------
 	----------------------------
 	-- Привязка клавиш/Нумпад --
 	----------------------------
@@ -157,7 +158,7 @@ P3DGroup_P3DHack = {
 	Keyboard_Auto_Config = true, -- Автоматический бинд клавиш (Клавиши смотреть ниже)
 	X_Ray = false, -- Отмечает всех в игре; По умолчанию на 'X'
 
-	-- Включение/Выключение клавиш здесь. Настройте то ,что хотите включить или выключить.
+	-- Включение/Выключение клавиш здесь. Настройте то, что хотите включить или выключить.
 	-- Пополнение здоровья и патронов(Z) --
 	Full_Replenish = true, -- Пополняет здоровье и патроны
 
@@ -175,7 +176,7 @@ P3DGroup_P3DHack = {
 	Locator = true, -- Включить локатор
 	Locator_Beep = false, -- Включить/Выключить звуковой сигнал при использовании локатора
 	Locator_Show_Crates	= true, -- Показать/Скрыть Crates Waypoints
-	Locator_Show_Distance = true, -- Показать/Скрыть растояние до точки
+	Locator_Show_Distance = true, -- Показать/Скрыть расстояние до точки
 	Locator_Show_Drills	= true, -- Показать/Скрыть дрели/буры
 	Locator_Show_Gage_Packages = false, -- Показать/Скрыть Гейдж пакеты
 	Locator_Show_On_Off_Message = false, -- Показывает/Скрывает сообщения в игре
@@ -192,7 +193,7 @@ P3DGroup_P3DHack = {
 	Gage_Package = true, -- Спавнить Гейдж пакеты на прицел
 
 	-- Убить всех (NUMPAD *) --
-	Ultimate_Kill = true, -- Убивает обсолютно всех
+	Ultimate_Kill = true, -- Убивает абсолютно всех
 
 	-- Заспавнить машину (Управляемую) (V)--
 	Vehicle_Spawn = true, -- Спавн машинына V (Только Автосалон)
@@ -201,7 +202,7 @@ P3DGroup_P3DHack = {
 	-- Здесь вы можете поменять местами нужные вам предметы --
 	Numpad_Loot_Spawn = false, -- Включить спавн на нумпад
 	Numpad_Loot_Spawn_0 = Bomb_Part_2, -- Numpad 0
-	Numpad_Loot_Spawn_1 = Turret_Ammo,   -- Numpad 1
+	Numpad_Loot_Spawn_1 = Turret_Ammo, -- Numpad 1
 	Numpad_Loot_Spawn_2 = Turret, -- Numpad 2
 	Numpad_Loot_Spawn_3 = Weapon, -- Numpad 3
 	Numpad_Loot_Spawn_4 = Gold, -- Numpad 4
@@ -217,17 +218,17 @@ P3DGroup_P3DHack = {
 	Auto_Cheats = true, -- Все нижеперечисленное будет работать если стоит true
 	Bag_CoolDown = false, -- У сумок нет кулдауна
 	Camera_Bag_Explosion_Multiplier = false, -- Множитель взрыва
-	Camera_Bag_Explosion_Multiplier_Amount = 0, --  (По умолчанию 4)
+	Camera_Bag_Explosion_Multiplier_Amount = 0, -- (По умолчанию 4)
 	Dodge_Chance_Buff = false, -- Шанс уклонения
 	Dodge_Chance_Buff_Amount = 0.5, -- Шанс уклонения (0.1 = 10%, 1 = 100%)
 	Dynamite_Buff = false,  -- Усиление динамита
 	Dynamite_Damage_Buff = 1000, -- Усиление урона для динамита (По умолчанию 30)
 	Dynamite_Self_Damage = 0, -- Урон наносимый персонажу от динамита (По умолчанию 10)
-	Dynamite_Range_Buff = 2000, -- Дистанция броска динамитной шашки (По умолчканию 1000)
+	Dynamite_Range_Buff = 2000, -- Дистанция броска динамитной шашки (По умолчанию 1000)
 	Explosion_Buff = false, -- Включить ниже перечисленные усиления
 	Explosion_Buff_Amount = 500, -- Все взрывы получают дополнительный урон
 	Fast_Mask = false, -- Быстрая маска
-	GL40_Buff = false, -- GL40 Увеличенеи урона
+	GL40_Buff = false, -- GL40 Увеличение урона
 	GL40_Buff_Damage_Amount = 2000, -- GL40 прибавка к урону (По умолчанию 34)
 	GL40_Buff_Player_Damage_Amount = 0, -- GL40 урон наносимый игроку (По умолчанию 8)
 	GL40_Buff_Range_Amount = 2000, -- GL40 Дальность запуска гранат(По умолчанию 350)
@@ -237,7 +238,7 @@ P3DGroup_P3DHack = {
 	Grenade_Buff_Player_Damage_Amount = 10, -- урон себе (По умолчанию 10)
 	Grenade_Buff_Range_Amount = 1200, -- Дальность гранаты (По умолчанию 1000)
 	Incendiary_Grenade_Buff = false, -- Усиление молотова
-	Incendiary_Grenade_Buff_Damage_Amount = 2000, -- Урон  от молотова врагам(По умолчанию 3)
+	Incendiary_Grenade_Buff_Damage_Amount = 2000, -- Урон от молотова врагам(По умолчанию 3)
 	Incendiary_Grenade_Buff_Player_Damage_Amount = 0, -- Урон от молотова себе (По умолчанию 2)
 	Incediary_Grenade_Buff_Range_Amount = 2000, -- Дальность броска молотова (По умолчанию 75)
 	Incendiary_Grenade_Buff_Burn_Duration_Amount = 5, -- Продолжительность (По умолчанию 6)
@@ -245,12 +246,12 @@ P3DGroup_P3DHack = {
 	Infinite_Hostage_Follow = false, -- Бесконечный захват заложников
 	Infinite_Stamina = false, -- Бесконечная выносливость
 	Interaction_CoolDown = false, -- Мгновенное взаимодействие
-	Jump_Mask_Off = true, -- Прыгать , когда маска выключена
-	Lowered_Headbob = false, -- Опущеная голова у фигурки бульдозера
+	Jump_Mask_Off = true, -- Прыгать, когда маска выключена
+	Lowered_Headbob = false, -- Опущена голова у фигурки бульдозера
 	Melee_Buff = false, -- Усиление рукопашной атаки
-	Melee_Buff_Amount = 1000, -- Урон с рукопашной атаки , вреж ему хорошенько!!!
+	Melee_Buff_Amount = 1000, -- Урон с рукопашной атаки, врежь ему хорошенько!!!
 	Molotov_Buff = false, -- Усиление молотова
-	Molotov_Buff_Damage_Amount = 2000, -- Урон  от молотова врагам (По умолчанию 3)
+	Molotov_Buff_Damage_Amount = 2000, -- Урон от молотова врагам (По умолчанию 3)
 	Molotov_Buff_Player_Damage_Amount = 0, -- Урон от молотова себе(По умолчанию 2)
 	Molotov_Buff_Range_Amount = 10000, -- Дальность броска молотова (По умолчанию 75)
 	Molotov_Buff_Burn_Duration_Amount = 30, -- Сколько площади горит(По умолчанию 20)
@@ -260,16 +261,16 @@ P3DGroup_P3DHack = {
 	RPG7_Buff = false, -- RPG-7 усиление
 	RPG7_Buff_Damage_Amount = 2000, -- RPG-7 урон (По умолчанию 1000)
 	RPG7_Buff_Player_Damage_Amount = 0, -- RPG-7 урон игроку (По умолчанию 40)
-	RPG7_Buff_Range_Amount = 2000, -- RPG-7 Диапозон взрыва(По умолчанию 500)
+	RPG7_Buff_Range_Amount = 2000, -- RPG-7 Диапазон взрыва(По умолчанию 500)
 	RPG7_Buff_Time_Amount = 5, -- RPG-7 задержка перед взрывом (По умолчанию 2.5)
 	Sixth_Sense_Reset = false, -- 6 чувство
 	Unlimited_BodyBags = false, -- Бесконечные мешки для трупов
 
-	-- Множител опыта -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
+	-- Множитель опыта -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
 	XP_Multiplier = false, -- Включить множитель урона
 	XP_Multiplier_Amount = 2, -- Множитель опыта
 
-	-- Случайный лут-- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
+	-- Случайный лут -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
 	Auto_Loot = false, -- Спавнить случайный лут (Только хост)
 	Auto_Equipment = false, -- Спавн оборудования
 
@@ -282,7 +283,7 @@ P3DGroup_P3DHack = {
 
 	-- Другие настройки -- (Требуется перезагрузка игры, что бы вступило в силу вступили в силу)
 	Grenade_Restrict = false, -- Отключение гранат во время стелса
-	Pager_Mod = false, -- -- Увеличение количества пейджеров (Только хост)
+	Pager_Mod = false, -- Увеличение количества пейджеров (Только хост)
 	Upgrade_Tweaks = false, -- Дополнительные настройки (Редактировать в '/Head/UpgradeTweakConfig') (Только хост)
 	--------------------------------------------------------------------------------------------------------------------
 	----------------
@@ -346,19 +347,12 @@ P3DGroup_P3DHack = {
 	Random_Pagers = false, -- Некоторые не имеют пейджеров (Только хост)
 	Steal_Pagers = false, -- Украсть пейджеры (Только хост)
 	----------------------------------------------
-	-- Настройки Манипулятор миссии  (F4) --
+	-- Настройки Манипулятор миссии (F4) --
 	----------------------------------------------
 	Mission_Manipulator_config = false, -- Манипулятор миссий (F4) (Не влияет на анти-чит)
 	-- Анти-чит отключен --
 	Anti_Cheat_Disable = true, -- Отключить Анти-чит
 	-- Открыть все двери
-	Classic_Open_Door = true, --Желаете открыть все двери, сейвы... Все, кроме комнаты охраны
-	New_Open_Door = true, --Желаете открыть все двери, сейвы... Все, кроме комнаты охраны
-	-- Настройки мыши
-	Mouse_Action_Config = true, -- Настройка действий мыши
-	MouseSlowMo = SideButton1, -- Включение/Выключение замедления
-	MouseTeleport = MiddleMouseButton,-- Телепорт на прицел
-	Mouse_Convert_Config = false, -- не совместим с верхней функцией , настройки преобразования
-	MouseConvert = MiddleMouseButton, -- Мгновенные доменирование врагов на прицел
-	MouseTeleport1 = SideButton1, -- Телепорт на прицел
+	Classic_Open_Door = true, -- Желаете открыть все двери, сейвы... Все, кроме комнаты охраны
+	New_Open_Door = true, -- Желаете открыть все двери, сейфы... Все, кроме комнаты охраны
 }

@@ -14,6 +14,7 @@ local ColorList = {
 	tank            = 'FFFF00', -- YELLOW
 	sniper          = 'FF9933', -- GOLD
 	gangster        = '660066',  -- PURPLE
+	medic           = 'E00AB9',  -- DARK PINK
 }
  
 function getUnitColor(unit)

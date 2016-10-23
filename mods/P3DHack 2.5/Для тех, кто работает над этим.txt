@@ -1,6 +1,4 @@
 Переписать спавн меню
 Убрать комент на 118 строке в InGameAuto.lua
-Телепорт и замедление в F4 
 CustomMenuClass.lua:1006: attempt to index a nil value
-F4 - MISSION MANIPULATOR MENU.lua:389: attempt to call global 'BindKey' (a nil value)
 Добавить не достающих кнопок

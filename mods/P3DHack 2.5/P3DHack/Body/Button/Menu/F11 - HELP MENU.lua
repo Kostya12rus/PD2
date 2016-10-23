@@ -34,17 +34,17 @@ if not HelpMenu then
 	HelpMenu:addMenuOption('main_menu', 'Из-за чего может быть тег ЧИТЕР', 'teg_menu', {rectHighlightColor = Color.red})
 	
 	HelpMenu:addInformationOption('teg_menu', 'В надежде, что кто-то это прочтет', {textColor = Color.DodgerBlue})
-	HelpMenu:addInformationOption('teg_menu', 'Тег возникает, только при использоваании определенных функций, таких как:')
-	HelpMenu:addInformationOption('teg_menu', '      Dlc Unocker и использование предметов, которые доступны за достижение')
+	HelpMenu:addInformationOption('teg_menu', 'Тег возникает, только при использовании определенных функций, таких как:')
+	HelpMenu:addInformationOption('teg_menu', '      Dlc Unlocker и использование предметов, которые доступны за достижение')
 	HelpMenu:addInformationOption('teg_menu', '      Смена оборудования в игре')
 	HelpMenu:addInformationOption('teg_menu', '      Спавн сумок с добычей')
 	HelpMenu:addInformationOption('teg_menu', '      Переносить больше сумок, когда не хост')
 	HelpMenu:addInformationOption('teg_menu', '      Пополнение гранат')
 	HelpMenu:addInformationOption('teg_menu', '      Использовать больше навыков, чем вам доступно')
-	HelpMenu:addInformationOption('teg_menu', '      Skin Unocker, если камуфляж содержит Dlc, которе вы не купили')
+	HelpMenu:addInformationOption('teg_menu', '      Skin Unlocker, если камуфляж содержит Dlc, которое вы не купили')
 	HelpMenu:addInformationOption('teg_menu', '      Сильную накрутку уровня через F10 /Постоянно/')
 	
-	HelpMenu:addMenuOption('main_menu', 'Из-за чего может быть тег ЧИТЕ /Продолжение/', 'teg2_menu', {rectHighlightColor = Color.red})
+	HelpMenu:addMenuOption('main_menu', 'Из-за чего может быть тег ЧИТЕР /Продолжение/', 'teg2_menu', {rectHighlightColor = Color.red})
 	
 	HelpMenu:addInformationOption('teg2_menu', 'В надежде, что кто-то это прочтет', {textColor = Color.DodgerBlue})
 	HelpMenu:addInformationOption('teg2_menu', 'Тег возникает, только при использоваании определенных функций, таких как:')
@@ -84,7 +84,7 @@ if not HelpMenu then
 	HelpMenu:addInformationOption('ingame_menu', 'F5 - Добавить предметов в инвентарь')
 	HelpMenu:addInformationOption('ingame_menu', 'F6 - Деньги')
 	HelpMenu:addInformationOption('ingame_menu', 'F7 - Таймер взаимодействия')
-	HelpMenu:addInformationOption('ingame_menu', 'F8 - Тролль меню')
+	HelpMenu:addInformationOption('ingame_menu', 'F8 - Тролль меню/Premium/')
 	HelpMenu:addInformationOption('ingame_menu', '~ /Premium/ - Тролль меню /Если вы не хост/')
 	HelpMenu:addInformationOption('ingame_menu', 'F10- Отключить худ')
    
