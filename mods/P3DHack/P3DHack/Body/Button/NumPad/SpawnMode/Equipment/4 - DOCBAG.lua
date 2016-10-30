@@ -9,4 +9,3 @@ if inGame() and isPlaying() and isHost() then
 	managers.network:session():send_to_peers_synched("sync_equipment_setup", unit, amount_upgrade_lvl, peer_id or 0)
 	unit:base():setup(amount_upgrade_lvl)
 end
-	

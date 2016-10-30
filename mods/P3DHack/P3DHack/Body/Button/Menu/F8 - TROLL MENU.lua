@@ -359,12 +359,16 @@ if not TrollMenu then
 	TrollMenu:addOption('self_menu', 'Ударить током', {callback = statetased})
 	TrollMenu:addGap('self_menu')
 	TrollMenu:addInformationOption('self_menu', "Другое", {textColor = Color.DodgerBlue})
-	TrollMenu:addOption('self_menu', 'Освободить себя из тюрьмы', {callback = releaseme})
-	TrollMenu:addOption('self_menu', 'Бросить себя за решетку', {callback = lockmeup})
-	TrollMenu:addGap('self_menu')
-	TrollMenu:addInformationOption('self_menu', "Выдать оборудование", {textColor = Color.DodgerBlue})
-	TrollMenu:addOption('self_menu', 'Выдать сумку с патронами', {callback = giveammoto, callbackData = 1})
-	TrollMenu:addOption('self_menu', 'Выдать аптечку', {callback = givemedikito, callbackData = 1})	
+	if isHost() then
+		TrollMenu:addOption('self_menu', 'Освободить себя из тюрьмы', {callback = releaseme})
+		TrollMenu:addOption('self_menu', 'Бросить себя за решетку', {callback = lockmeup})
+		TrollMenu:addGap('self_menu')
+		TrollMenu:addInformationOption('self_menu', "Выдать оборудование", {textColor = Color.DodgerBlue})
+		TrollMenu:addOption('self_menu', 'Выдать сумку с патронами', {callback = giveammoto, callbackData = 1})
+		TrollMenu:addOption('self_menu', 'Выдать аптечку', {callback = givemedikito, callbackData = 1})
+	else
+		TrollMenu:addInformationOption('main_menu', 'Недоступно (Только хост)', {textColor = Color.yellow})
+	end
 	
 	-- MESS WITH PLAYER 2
 	TrollMenu:addInformationOption('player_2', "Издеваться над игроком", {textColor = Color.DodgerBlue})

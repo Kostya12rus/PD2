@@ -19,7 +19,76 @@ if not NumpadMenu then
 		spawn_crosshair = true
 		load_data = true
 	end
-
+	-- BODYBAGS CASE SPAWNER
+	function BODYBAGCASE()
+	if inGame() and isPlaying() and isHost() then
+	local position = get_crosshair_ray().hit_position
+	local rotation = Rotation(managers.player:local_player():movement():m_head_rot():yaw(),0,0)
+	local amount_upgrade_lvl = 0
+	local peer_id = managers.network:session():local_peer():id()
+	local unit_name = "units/payday2/equipment/gen_equipment_bodybags_bag/gen_equipment_bodybags_bag"
+	local unit = World:spawn_unit(Idstring(unit_name), position, rotation)
+	managers.network:session():send_to_peers_synched("sync_equipment_setup", unit, amount_upgrade_lvl, peer_id or 0)
+	unit:base():setup(amount_upgrade_lvl)
+	end
+	end
+	-- AMMO BAG SPAWNER
+	function AMMOBAG()
+	if inGame() and isPlaying() and isHost() then
+	local position = get_crosshair_ray().hit_position
+	local rotation = Rotation(managers.player:local_player():movement():m_head_rot():yaw(),0,0)
+	local peer_id = managers.network:session():local_peer():id()
+	local ammo_upgrade_lvl = managers.player:upgrade_level("ammo_bag", "ammo_increase")
+	local unit_name = "units/payday2/equipment/gen_equipment_ammobag/gen_equipment_ammobag"
+	local unit = World:spawn_unit(Idstring(unit_name), position, rotation, ammo_upgrade_lvl)
+	managers.network:session():send_to_peers_synched("sync_equipment_setup", unit, ammo_upgrade_lvl, peer_id or 0)
+	unit:base():setup(ammo_upgrade_lvl)
+	end
+	end
+	
+	-- SPAWN GRENADE CASE
+	function GRDCASE()
+	if inGame() and isPlaying() and isHost() then
+	local position = get_crosshair_ray().hit_position
+	local rotation = Rotation(managers.player:local_player():movement():m_head_rot():yaw(),0,0)
+	local unit_name = "units/payday2/equipment/gen_equipment_grenade_crate/gen_equipment_grenade_crate"
+	local unit = World:spawn_unit(Idstring(unit_name), position, rotation)
+	managers.network:session():send_to_peers_synched("sync_unit_event_id_16", unit, "sync", 1)
+	end
+	end
+	-----SPAWNSPAWNSPAWNSPAWNSPAWNSPAWNSPAWN
+	
+	-- SPAWN SENTRY ON SELF
+	function SENTRY()
+	if inGame() and isPlaying() then
+	local ammo_multiplier = managers.player:upgrade_value( "sentry_gun", "extra_ammo_multiplier", 1 )
+	local armor_multiplier = managers.player:upgrade_value( "sentry_gun", "armor_multiplier", 1 )
+	local damage_multiplier = managers.player:upgrade_value( "sentry_gun", "damage_multiplier", 1 )
+	local unit = managers.player:player_unit()
+	local from = managers.player:player_unit():movement():m_head_pos()
+	local to = from + managers.player:player_unit():movement():m_head_rot():y() * 999999
+	local ray = managers.player:player_unit():raycast("ray", from, to, "slot_mask", managers.slot:get_mask("trip_mine_placeables"), "ignore_unit", {})
+	if ray then
+		local pos = ray.position
+		local rot = managers.player:player_unit():movement():m_head_rot()
+		local rot = Rotation( rot:yaw(), 0, 0 )
+		local selected_index = nil
+		if Network:is_client() then
+			managers.network:session():send_to_host( "place_sentry_gun", pos, rot, ammo_multiplier, armor_multiplier, damage_multiplier, selected_index, unit )
+			PlayerEquipment.sentrygun_placement_requested = true
+		else
+			local shield = managers.player:has_category_upgrade( "sentry_gun", "shield" )
+			local sentry_gun_unit = SentryGunBase.spawn( unit, pos, rot, ammo_multiplier, armor_multiplier, damage_multiplier )
+			if sentry_gun_unit then
+				managers.network:session():send_to_peers_synched( "from_server_sentry_gun_place_result", managers.network:session():local_peer():id(), selected_index, sentry_gun_unit, sentry_gun_unit:movement()._rot_speed_mul, sentry_gun_unit:weapon()._setup.spread_mul, shield )
+			else
+			end	
+		end	
+	end	
+	end
+	end
+	
+	
 	function spawn_enemy()
 		data_se = true
 		data_ses = false
@@ -262,45 +331,10 @@ if not NumpadMenu then
 	modeequip = modeequip or function()
 		Toggle.equip = not Toggle.equip	
 		if not Toggle.equip then	
-			UnbindKey("VK_NUMPAD0")
-			UnbindKey("VK_NUMPAD1")
-			UnbindKey("VK_NUMPAD2")
-			UnbindKey("VK_NUMPAD3")
-			UnbindKey("VK_NUMPAD4")
-			UnbindKey("VK_NUMPAD5")
-			UnbindKey("VK_NUMPAD6")
-			UnbindKey("VK_NUMPAD7")
-			UnbindKey("VK_NUMPAD8")
-			UnbindKey("VK_NUMPAD9")
-			BindKey("VK_NUMPAD0", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM0.lua")
-			BindKey("VK_NUMPAD1", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM1.lua") 
-			BindKey("VK_NUMPAD2", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM2.lua")
-			BindKey("VK_NUMPAD3", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM3.lua")
-			BindKey("VK_NUMPAD4", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM4.lua") 
-			BindKey("VK_NUMPAD5", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM5.lua")
-			BindKey("VK_NUMPAD6", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM6.lua")
-			BindKey("VK_NUMPAD7", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM7.lua") 
-			BindKey("VK_NUMPAD8", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM8.lua")
-			BindKey("VK_NUMPAD9", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/LootBag/NUM9.lua")
+			dofile(ModPath .."P3DHack/Body/Button/NumPad/SpawnMode\Equipment/1 - BODYBAGCASE.lua")
 			ChatMessage('Отключено', 'Спавн оборудования')
 		else
-			UnbindKey("VK_NUMPAD0")
-			UnbindKey("VK_NUMPAD1")
-			UnbindKey("VK_NUMPAD2")
-			UnbindKey("VK_NUMPAD3")
-			UnbindKey("VK_NUMPAD4")
-			UnbindKey("VK_NUMPAD5")
-			UnbindKey("VK_NUMPAD6")
-			UnbindKey("VK_NUMPAD7")
-			UnbindKey("VK_NUMPAD8")
-			UnbindKey("VK_NUMPAD9")
-			BindKey("VK_NUMPAD1", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/Equipment/1 - BODYBAGCASE.lua")
-			BindKey("VK_NUMPAD2", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/Equipment/2 - AMMOBAG.lua") 
-			BindKey("VK_NUMPAD3", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/Equipment/3 - GRDCASE.lua")
-			BindKey("VK_NUMPAD4", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/Equipment/4 - DOCBAG.lua")
-			BindKey("VK_NUMPAD5", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/Equipment/5 - SENTRY.lua")
-			BindKey("VK_NUMPAD6", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/Equipment/6 - TRIPMINE.lua")
-			BindKey("VK_NUMPAD7", "P3DHack/Main/KeyBinds/NumPad/SpawnMode/Equipment/7 - MEDKIT.lua")
+			dofile(ModPath .."P3DHack/Body/Button/NumPad/SpawnMode\Equipment/1 - BODYBAGCASE.lua")
 			ChatMessage('Включено', 'Спавн оборудования')
 		end 
 	end
@@ -357,6 +391,7 @@ if not NumpadMenu then
 	NumpadMenu = CustomMenuClass:new()
 	NumpadMenu:addMainMenu('main_menu', { title = 'Спавн меню' } )
 	NumpadMenu:addMainMenu('spawn_menu', { title = 'Спавн врагов/союзников'} )
+	NumpadMenu:addMainMenu('spawn_equipment', { title = 'Спавн оборудования на прицел'} )
 	
 	NumpadMenu:addInformationOption('main_menu', 'Спавн врагов/союзников', { textColor = Color.red } )
 	if isHost() then
@@ -393,12 +428,26 @@ if not NumpadMenu then
 	end
 	NumpadMenu:addInformationOption('main_menu', 'Другое', { textColor = Color.DodgerBlue } )
 	if isHost() then
-		NumpadMenu:addToggleOption('main_menu', 'Спавн оборудования на прицел', { callback = modeequip, help = 'Спавн оборудования на прицел', closeMenu = true } )
+		NumpadMenu:addMenuOption('main_menu', 'Спавн оборудования на прицел', 'spawn_equipment', { rectHighlightColor = Color(255, 138, 17, 9) / 255} )
 		NumpadMenu:addToggleOption('main_menu', 'Спавн награбленного/объектов/транспорта на прицел', { callback = lootmode, help = 'Спавн награбленного/объектов/транспорта на прицел', closeMenu = true } )
 	else
+		NumpadMenu:addMenuOption('main_menu', 'Спавн оборудования на прицел', 'spawn_equipment', { rectHighlightColor = Color(255, 138, 17, 9) / 255} )
 		NumpadMenu:addInformationOption('main_menu', 'Недоступно (Только хост)', { textColor = Color.yellow })
-		NumpadMenu:addInformationOption('main_menu', 'Недоступно (Только хост)', { textColor = Color.yellow })
-	end 
+	end
+	NumpadMenu:addInformationOption('spawn_equipment', 'Для спавна используйте NUMPAD 1-9', { textColor = Color.DodgerBlue})
+	NumpadMenu:addOption('spawn_equipment', '1 - BODYBAGCASE Host', { callback = BODYBAGCASE, closeMenu = true } )
+	NumpadMenu:addOption('spawn_equipment', '2 - AMMOBAG Host', { callback = AMMOBAG, closeMenu = true } )
+	NumpadMenu:addOption('spawn_equipment', '3 - GRDCASE Host', { callback = GRDCASE, closeMenu = true } )
+	NumpadMenu:addGap('spawn_equipment')
+	NumpadMenu:addGap('spawn_equipment')
+	NumpadMenu:addGap('spawn_equipment')
+	NumpadMenu:addGap('spawn_equipment')
+	NumpadMenu:addGap('spawn_equipment')
+	NumpadMenu:addGap('spawn_equipment')
+	NumpadMenu:addGap('spawn_equipment')
+	NumpadMenu:addOption('spawn_equipment', 'Спавн союзников', { callback = spawn_allied, closeMenu = true } )
+	NumpadMenu:addOption('spawn_equipment', '5 - SENTRY Host vopros', { callback = SENTRY, closeMenu = true } )
+	NumpadMenu:addOption('spawn_equipment', 'Спавн элитных Gensec союзников', { callback = spawn_allied_elitegensec, closeMenu = true } )
 end
 
 if inGame() and isPlaying() then

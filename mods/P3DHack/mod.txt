@@ -39,10 +39,6 @@
 			"script_path": "P3DHack/Body/Require/NoJobHeat.lua"
 		},
 		{
-			"hook_id": "lib/managers/menumanager",
-			"script_path": "P3DHack/Body/Require/RestartPro.lua"
-		},
-		{
 			"hook_id": "lib/managers/moneymanager",
 			"script_path": "P3DHack/Body/Require/MoneyManager.lua"
 		},
@@ -132,6 +128,10 @@
 		}
 	],
 	"persist_scripts": [
+		{
+			"global": "aim_global",
+			"script_path": "P3DHack/Body/Require/GlobalAim.lua"
+		},
 		{
 			"global": "P3DFix",
 			"script_path": "P3DHack/Body/Require/FPSFixer.lua"
@@ -345,6 +345,41 @@
 			"name": "PUSH STACK UP",
 			"description": "Bind at _-",
 			"script_path": "P3DHack/Body/Button/Keyboard/pushstackup.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		},{
+			"keybind_id": "aim_bot",
+			"name": "Aimbot",
+			"description": "Bind at Delete Button or other button",
+			"script_path": "P3DHack/Body/Button/Keyboard/Aimbot.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "TELEPORT",
+			"name": "PENETRATIVE TELEPORT",
+			"description": "Bind at Middle Mouse Button or other button",
+			"script_path": "P3DHack/Body/Button/Mouse/PENETRATIVE TELEPORT.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "SLOWMO",
+			"name": "SLOWMO",
+			"description": "Bind at Mouse Button or other button",
+			"script_path": "P3DHack/Body/Button/Keyboard/SLOWMO.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "VK_NUM_ENTER",
+			"name": "NUM ENTER",
+			"description": "Bind at NUM ENTER",
+			"script_path": "P3DHack/Body/Button/NumPad/JUMP.lua",
 			"run_in_menu": true,
 			"run_in_game": true,
 			"localized": false
