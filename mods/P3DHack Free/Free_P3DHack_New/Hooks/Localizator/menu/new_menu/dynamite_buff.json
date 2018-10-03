@@ -1,0 +1,76 @@
+{
+	"menu_id": "p3dtext_options_Dynamite_Buff_functions",
+	"parent_menu_id": "p3dtext_options_NewMenu_function",
+	"title": "Dynamite_Buff_func",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "Dynamite_Buff_func",
+			"title": "",
+			"description": "Dynamite_Buff_func",
+			"items": [
+				"Dynamite_Buff_func"
+			],
+			"value": "Dynamite_Buff_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Dynamite_Buff",
+			"title": "Dynamite_Buff_title",
+			"description": "Dynamite_Buff_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Dynamite_Buff",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "slider",
+			"id": "Dynamite_Buff_Damage_Amount",
+			"title": "Dynamite_Buff_Damage_Amount_title",
+			"description": "Dynamite_Buff_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Dynamite_Buff_Damage_Amount",
+			"default_value": 1000,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Dynamite_Buff_Player_Damage_Amount",
+			"title": "Dynamite_Buff_Player_Damage_Amount_title",
+			"description": "Dynamite_Buff_Player_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Dynamite_Buff_Player_Damage_Amount",
+			"default_value": 0,
+			"max": 100,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Dynamite_Buff_Range_Amount",
+			"title": "Dynamite_Buff_Range_Amount_title",
+			"description": "Dynamite_Buff_Range_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Dynamite_Buff_Range_Amount",
+			"default_value": 2000,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

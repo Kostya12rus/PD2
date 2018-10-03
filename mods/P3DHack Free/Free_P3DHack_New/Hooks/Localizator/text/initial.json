@@ -1,0 +1,12 @@
+{
+	"p3dtext_options": "P3DHack Config",
+
+	"p3dtext_language_english": "English",
+	"p3dtext_language_french": "French",
+	"p3dtext_language_russian": "Russian",
+	"p3dtext_language_german": "German",
+	"p3dtext_language_spanish": "Spanish",
+	"p3dtext_language_portuguese": "Portuguese",
+	"p3dtext_language_zn_ch": "Chinese",
+	"p3dtext_language_custom": "Custom"
+}

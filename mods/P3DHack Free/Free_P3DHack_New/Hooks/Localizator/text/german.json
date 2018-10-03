@@ -1,0 +1,20 @@
+{
+	"p3d_menu_title":"P3DHack Konfig",
+	"p3d_menu_desc":"Hier können sie die konfigurationsdatei anpassen",
+
+	"Language_text":"Lokalisierung",
+
+	"p3dtext_language_title" : "Sprachausgabe",
+	"p3dtext_language_desc" : "Ändere die Sprachausgabe der Mod (Benötigt Neustart, um zu wirken)",
+
+	"fast_function":"Schnelle Auswahl",
+
+	"dlc_title":"DLC Entsperren[Cheater tag]",
+	"dlc_desc":"Möchten Sie alle DLC entsperren? Neustart empfohlen!",
+
+	"skin_title":"Haut Entsperren",
+	"skin_desc":"Wollen sie alle Waffenhäute Freischalten? Neustart empfohlen!",
+
+	"skin_armor_title":"Rüstung Haut Entsperren",
+	"skin_armor_desc":"Willst du alle Skins für Rüstungen Freischalten?"
+}

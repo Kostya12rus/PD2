@@ -1,0 +1,88 @@
+{
+	"menu_id": "p3dtext_options_GL40_Buff_functions",
+	"parent_menu_id": "p3dtext_options_NewMenu_function",
+	"title": "GL40_Buff_func",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "GL40_Buff_func",
+			"title": "",
+			"description": "GL40_Buff_func",
+			"items": [
+				"GL40_Buff_func"
+			],
+			"value": "GL40_Buff_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "GL40_Buff",
+			"title": "GL40_Buff_title",
+			"description": "GL40_Buff_desc",
+			"callback": "settings_callback_toggle",
+			"value": "GL40_Buff",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "slider",
+			"id": "GL40_Buff_Damage_Amount",
+			"title": "GL40_Buff_Damage_Amount_title",
+			"description": "GL40_Buff_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "GL40_Buff_Damage_Amount",
+			"default_value": 2000,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "GL40_Buff_Player_Damage_Amount",
+			"title": "GL40_Buff_Player_Damage_Amount_title",
+			"description": "GL40_Buff_Player_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "GL40_Buff_Player_Damage_Amount",
+			"default_value": 0,
+			"max": 100,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "GL40_Buff_Range_Amount",
+			"title": "GL40_Buff_Range_Amount_title",
+			"description": "GL40_Buff_Range_Amount_desc",
+			"callback": "settings_callback",
+			"value": "GL40_Buff_Range_Amount",
+			"default_value": 2000,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "GL40_Buff_Time_Amount",
+			"title": "GL40_Buff_Time_Amount_title",
+			"description": "GL40_Buff_Time_Amount_desc",
+			"callback": "settings_callback",
+			"value": "GL40_Buff_Time_Amount",
+			"default_value": 5,
+			"max": 10,
+			"min": 0,
+			"step": 0.5
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

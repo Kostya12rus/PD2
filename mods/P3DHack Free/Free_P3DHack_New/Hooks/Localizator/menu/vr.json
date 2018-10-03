@@ -1,0 +1,36 @@
+{
+	"menu_id": "p3dtext_options_vrmenu_function",
+	"parent_menu_id": "p3dtext_options_menu",
+	"title": "vrmenu",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "vrmenu",
+			"title": "",
+			"description": "vrmenu",
+			"items": [
+				"vrmenu"
+			],
+			"value": "vrmenu",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "I_Use_VR",
+			"title": "I_Use_VR_title",
+			"description": "I_Use_VR_desc",
+			"callback": "settings_callback_toggle",
+			"value": "I_Use_VR",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

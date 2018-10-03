@@ -1,0 +1,96 @@
+{
+	"menu_id": "p3dtext_options_main_function",
+	"parent_menu_id": "p3dtext_options_menu",
+	"title": "Main_function",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "Main",
+			"title": "",
+			"description": "Main_function",
+			"items": [
+				"Main_function"
+			],
+			"value": "Main_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "No_FlashBang",
+			"title": "No_FlashBang_title",
+			"description": "No_FlashBang_desc",
+			"callback": "settings_callback_toggle",
+			"value": "No_FlashBang",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "No_Recoil",
+			"title": "No_Recoil_title",
+			"description": "No_Recoil_desc",
+			"callback": "settings_callback_toggle",
+			"value": "No_Recoil",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "No_Spread",
+			"title": "No_Spread_title",
+			"description": "No_Spread_desc",
+			"callback": "settings_callback_toggle",
+			"value": "No_Spread",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Stamina",
+			"title": "Infinite_Stamina_title",
+			"description": "Infinite_Stamina_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Stamina",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "rave",
+			"title": "rave_title",
+			"description": "rave_desc",
+			"callback": "settings_callback_toggle",
+			"value": "rave",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "ScamDetectionLevel",
+			"title": "ScamDetectionLevel_title",
+			"description": "ScamDetectionLevel_desc",
+			"callback": "settings_callback_toggle",
+			"value": "ScamDetectionLevel",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 25
+		},
+		{
+			"type": "multiple_choice",
+			"id": "other_menus",
+			"title": "",
+			"description": "other_menus",
+			"items": [
+				"other_menus"
+			],
+			"value": "other_menus",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		}
+	]
+}

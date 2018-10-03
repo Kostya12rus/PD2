@@ -1,0 +1,165 @@
+{
+	"menu_id": "p3dtext_options_othermenu_function",
+	"parent_menu_id": "p3dtext_options_menu",
+	"title": "othermenu_function",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "othermenu",
+			"title": "",
+			"description": "othermenu_function",
+			"items": [
+				"othermenu_function"
+			],
+			"value": "othermenu_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "No_Job_Heat",
+			"title": "No_Job_Heat_title",
+			"description": "No_Job_Heat_desc",
+			"callback": "settings_callback_toggle",
+			"value": "No_Job_Heat",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Job_Heat_Amount",
+			"title": "Job_Heat_Amount_title",
+			"description": "Job_Heat_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Job_Heat_Amount",
+			"default_value": 1.2,
+			"max": 10,
+			"min": 1,
+			"step": 0.5
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "XP_Multiplier",
+			"title": "XP_Multiplier_title",
+			"description": "XP_Multiplier_desc",
+			"callback": "settings_callback_toggle",
+			"value": "XP_Multiplier",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "XP_Multiplier_Amount",
+			"title": "XP_Multiplier_Amount_title",
+			"description": "XP_Multiplier_Amount_desc",
+			"callback": "settings_callback",
+			"value": "XP_Multiplier_Amount",
+			"default_value": 2,
+			"max": 10,
+			"min": 0,
+			"step": 0.5
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Secure_BodyBags",
+			"title": "Secure_BodyBags_title",
+			"description": "Secure_BodyBags_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Secure_BodyBags",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Secure_BodyBags_Loot_Value",
+			"title": "Secure_BodyBags_Loot_Value_title",
+			"description": "Secure_BodyBags_Loot_Value_desc",
+			"callback": "settings_callback",
+			"value": "Secure_BodyBags_Loot_Value",
+			"default_value": 1000,
+			"max": 10000,
+			"min": 1000,
+			"step": 1000
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Toggle_Interact",
+			"title": "Toggle_Interact_title",
+			"description": "Toggle_Interact_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Toggle_Interact",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Grenade_Restrict",
+			"title": "Grenade_Restrict_title",
+			"description": "Grenade_Restrict_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Grenade_Restrict",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Pager_Mod",
+			"title": "Pager_Mod_title",
+			"description": "Pager_Mod_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Pager_Mod",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Zipline_Drop",
+			"title": "Zipline_Drop_title",
+			"description": "Zipline_Drop_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Zipline_Drop",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Classic_Open_Door",
+			"title": "Classic_Open_Door_title",
+			"description": "Classic_Open_Door_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Classic_Open_Door",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "New_Open_Door",
+			"title": "New_Open_Door_title",
+			"description": "New_Open_Door_desc",
+			"callback": "settings_callback_toggle",
+			"value": "New_Open_Door",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Anti_Cheat_Disable",
+			"title": "Anti_Cheat_Disable_title",
+			"description": "Anti_Cheat_Disable_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Anti_Cheat_Disable",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

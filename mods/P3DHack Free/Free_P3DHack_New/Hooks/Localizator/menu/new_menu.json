@@ -1,0 +1,216 @@
+{
+	"menu_id": "p3dtext_options_NewMenu_function",
+	"parent_menu_id": "p3dtext_options_menu",
+	"title": "NewMenu_function",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "NewMenu",
+			"title": "",
+			"description": "NewMenu_function",
+			"items": [
+				"NewMenu_function"
+			],
+			"value": "NewMenu_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Auto_Cheats",
+			"title": "Auto_Cheats_title",
+			"description": "Auto_Cheats_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Auto_Cheats",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Dodge_Chance_Buff",
+			"title": "Dodge_Chance_Buff_title",
+			"description": "Dodge_Chance_Buff_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Dodge_Chance_Buff",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Dodge_Chance_Buff_Amount",
+			"title": "Dodge_Chance_Buff_Amount_title",
+			"description": "Dodge_Chance_Buff_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Dodge_Chance_Buff_Amount",
+			"default_value": 0.5,
+			"max": 1,
+			"min": 0,
+			"step": 0.01
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Melee_Buff",
+			"title": "Melee_Buff_title",
+			"description": "Melee_Buff_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Melee_Buff",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Melee_Buff_Amount",
+			"title": "Melee_Buff_Amount_title",
+			"description": "Melee_Buff_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Melee_Buff_Amount",
+			"default_value": 1000,
+			"max": 10000,
+			"min": 0,
+			"step": 100
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Unlimited_BodyBags",
+			"title": "Unlimited_BodyBags_title",
+			"description": "Unlimited_BodyBags_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Unlimited_BodyBags",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Jump_Mask_Off",
+			"title": "Jump_Mask_Off_title",
+			"description": "Jump_Mask_Off_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Jump_Mask_Off",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Fast_Mask",
+			"title": "Fast_Mask_title",
+			"description": "Fast_Mask_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Fast_Mask",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Hostage_Follow",
+			"title": "Infinite_Hostage_Follow_title",
+			"description": "Infinite_Hostage_Follow_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Hostage_Follow",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Interaction_CoolDown",
+			"title": "Interaction_CoolDown_title",
+			"description": "Interaction_CoolDown_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Interaction_CoolDown",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Sixth_Sense_Reset",
+			"title": "Sixth_Sense_Reset_title",
+			"description": "Sixth_Sense_Reset_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Sixth_Sense_Reset",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Bag_CoolDown",
+			"title": "Bag_CoolDown_title",
+			"description": "Bag_CoolDown_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Bag_CoolDown",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Camera_Bag_Explosion_Multiplier",
+			"title": "Camera_Bag_Explosion_Multiplier_title",
+			"description": "Camera_Bag_Explosion_Multiplier_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Camera_Bag_Explosion_Multiplier",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Camera_Bag_Explosion_Multiplier_Amount",
+			"title": "Camera_Bag_Explosion_Multiplier_Amount_title",
+			"description": "Camera_Bag_Explosion_Multiplier_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Camera_Bag_Explosion_Multiplier_Amount",
+			"default_value": 0,
+			"max": 10,
+			"min": 0,
+			"step": 1
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Explosion_Buff",
+			"title": "Explosion_Buff_title",
+			"description": "Explosion_Buff_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Explosion_Buff",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Explosion_Buff_Amount",
+			"title": "Explosion_Buff_Amount_title",
+			"description": "Explosion_Buff_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Explosion_Buff_Amount",
+			"default_value": 500,
+			"max": 1000,
+			"min": 0,
+			"step": 100
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Lowered_Headbob",
+			"title": "Lowered_Headbob_title",
+			"description": "Lowered_Headbob_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Lowered_Headbob",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

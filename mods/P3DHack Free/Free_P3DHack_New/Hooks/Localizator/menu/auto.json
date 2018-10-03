@@ -1,0 +1,698 @@
+{
+	"menu_id": "p3dtext_options_auto",
+	"parent_menu_id": "p3dtext_options_menu",
+	"title": "Auto_func",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "Keyboard_Auto_Config",
+			"title": "",
+			"description": "Keyboard_Auto_Config",
+			"items": [
+				"Keyboard_Auto_Config"
+			],
+			"value": "Keyboard_Auto_Config",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "X_Ray",
+			"title": "X_Ray_title",
+			"description": "X_Ray_desc",
+			"callback": "settings_callback_toggle",
+			"value": "X_Ray",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Full_Replenish",
+			"title": "Full_Replenish_title",
+			"description": "Full_Replenish_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Full_Replenish",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Ammo_Replenish",
+			"title": "Ammo_Replenish_title",
+			"description": "Ammo_Replenish_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Ammo_Replenish",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Vehicle_Spawn",
+			"title": "Vehicle_Spawn_title",
+			"description": "Vehicle_Spawn_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Vehicle_Spawn",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Hud_Toggle",
+			"title": "Hud_Toggle_title",
+			"description": "Hud_Toggle_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Hud_Toggle",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Gage_Package",
+			"title": "Gage_Package_title",
+			"description": "Gage_Package_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Gage_Package",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Restart_Job",
+			"title": "Restart_Job_title",
+			"description": "Restart_Job",
+			"callback": "settings_callback_toggle",
+			"value": "Restart_Job",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Ultimate_Kill",
+			"title": "Ultimate_Kill_title",
+			"description": "Ultimate_Kill_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Ultimate_Kill",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Jumper",
+			"title": "Jumper_title",
+			"description": "Jumper_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Jumper",
+			"default_value": true
+		},
+		{
+			"type": "slider",
+			"id": "Jumper_set",
+			"title": "Jumper_set_title",
+			"description": "Jumper_set_desc",
+			"callback": "settings_callback",
+			"value": "Jumper_set",
+			"default_value": 2,
+			"max": 10,
+			"min": 1,
+			"step": 0.5
+		},
+		{
+			"type": "divider",
+			"size": 25
+		},
+		{
+			"type": "multiple_choice",
+			"id": "Auto_func",
+			"title": "",
+			"description": "Auto_func",
+			"items": [
+				"Auto_func"
+			],
+			"value": "Auto_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 0
+		},
+		{
+			"type": "multiple_choice",
+			"id": "Player_Menu_Config_func",
+			"title": "",
+			"description": "Player_Menu_Config_func",
+			"items": [
+				"Player_Menu_Config_func"
+			],
+			"value": "Player_Menu_Config_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Player_Menu_Config",
+			"title": "Player_Menu_Config_title",
+			"description": "Player_Menu_Config_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Player_Menu_Config",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "God_Mode",
+			"title": "God_Mode_title",
+			"description": "God_Mode_desc",
+			"callback": "settings_callback_toggle",
+			"value": "God_Mode",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Friendly_Fire",
+			"title": "Friendly_Fire_title",
+			"description": "Friendly_Fire_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Friendly_Fire",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Auto_Drill_Service",
+			"title": "Auto_Drill_Service_title",
+			"description": "Auto_Drill_Service_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Auto_Drill_Service",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Carry_Mod",
+			"title": "Carry_Mod_title",
+			"description": "Carry_Mod_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Carry_Mod",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Cloakers_Cuff_Self",
+			"title": "Cloakers_Cuff_Self_title",
+			"description": "Cloakers_Cuff_Self_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Cloakers_Cuff_Self",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Ammo_Bag",
+			"title": "Infinite_Ammo_Bag_title",
+			"description": "Infinite_Ammo_Bag_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Ammo_Bag",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Specials",
+			"title": "Infinite_Specials_title",
+			"description": "Infinite_Specials_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Specials",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Converts",
+			"title": "Infinite_Converts_title",
+			"description": "Infinite_Converts_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Converts",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Carry_Stacker",
+			"title": "Carry_Stacker_title",
+			"description": "Carry_Stacker_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Carry_Stacker",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Doc_Bag_Use",
+			"title": "Infinite_Doc_Bag_Use_title",
+			"description": "Infinite_Doc_Bag_Use_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Doc_Bag_Use",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_ECM_Battery",
+			"title": "Infinite_ECM_Battery_title",
+			"description": "Infinite_ECM_Battery_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_ECM_Battery",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Messiah_Charge",
+			"title": "Infinite_Messiah_Charge_title",
+			"description": "Infinite_Messiah_Charge_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Messiah_Charge",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Pager_Answers",
+			"title": "Infinite_Pager_Answers_title",
+			"description": "Infinite_Pager_Answers_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Pager_Answers",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Instant_Dominate",
+			"title": "Instant_Dominate_title",
+			"description": "Instant_Dominate_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Instant_Dominate",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Instant_Drill",
+			"title": "Instant_Drill_title",
+			"description": "Instant_Drill_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Instant_Drill",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Interact_Distance_Increase",
+			"title": "Interact_Distance_Increase_title",
+			"description": "Interact_Distance_Increase_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Interact_Distance_Increase",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Interact_Distance_Amount",
+			"title": "Interact_Distance_Amount_title",
+			"description": "Interact_Distance_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Interact_Distance_Amount",
+			"default_value": 600,
+			"max": 2000,
+			"min": 200,
+			"step": 100
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Instant_Interact",
+			"title": "Instant_Interact_title",
+			"description": "Instant_Interact_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Instant_Interact",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Instant_Interact_With_Anything",
+			"title": "Instant_Interact_With_Anything_title",
+			"description": "Instant_Interact_With_Anything_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Instant_Interact_With_Anything",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Interact_Thru_Wall",
+			"title": "Interact_Thru_Wall_title",
+			"description": "Interact_Thru_Wall_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Interact_Thru_Wall",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "No_Hit_Disorientation",
+			"title": "No_Hit_Disorientation_title",
+			"description": "No_Hit_Disorientation_desc",
+			"callback": "settings_callback_toggle",
+			"value": "No_Hit_Disorientation",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Small_Loot_Multiplier",
+			"title": "Small_Loot_Multiplier_title",
+			"description": "Small_Loot_Multiplier_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Small_Loot_Multiplier",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Small_Loot_Multiplier_Amount",
+			"title": "Small_Loot_Multiplier_Amount_title",
+			"description": "Small_Loot_Multiplier_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Small_Loot_Multiplier_Amount",
+			"default_value": 3,
+			"max": 20,
+			"min": 1,
+			"step": 1
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Zipline_Transport",
+			"title": "Zipline_Transport_title",
+			"description": "Zipline_Transport_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Zipline_Transport",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Speed_hack",
+			"title": "Speed_hack_title",
+			"description": "Speed_hack_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Speed_hack",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 25
+		},
+		{
+			"type": "multiple_choice",
+			"id": "Weapon_Menu_Config_func",
+			"title": "",
+			"description": "Weapon_Menu_Config_func",
+			"items": [
+				"Weapon_Menu_Config_func"
+			],
+			"value": "Weapon_Menu_Config_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Weapon_Menu_Config",
+			"title": "Weapon_Menu_Config_title",
+			"description": "Weapon_Menu_Config_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Weapon_Menu_Config",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Sentry_Infinite_Ammo",
+			"title": "Sentry_Infinite_Ammo_title",
+			"description": "Sentry_Infinite_Ammo_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Sentry_Infinite_Ammo",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Sentry_God_Mode",
+			"title": "Sentry_God_Mode_title",
+			"description": "Sentry_God_Mode_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Sentry_God_Mode",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Bullet_Explode",
+			"title": "Bullet_Explode_title",
+			"description": "Bullet_Explode_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Bullet_Explode",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Bullet_Fire",
+			"title": "Bullet_Fire_title",
+			"description": "Bullet_Fire_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Bullet_Fire",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Weapon_Damage_Multiplier",
+			"title": "Weapon_Damage_Multiplier_title",
+			"description": "Weapon_Damage_Multiplier_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Weapon_Damage_Multiplier",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "Weapon_Damage_Multiplier_Amount",
+			"title": "Weapon_Damage_Multiplier_Amount_title",
+			"description": "Weapon_Damage_Multiplier_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Weapon_Damage_Multiplier_Amount",
+			"default_value": 500,
+			"max": 1000,
+			"min": 0,
+			"step": 100
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Weapon_Fire_Rate_Multiplier",
+			"title": "Weapon_Fire_Rate_Multiplier_title",
+			"description": "Weapon_Fire_Rate_Multiplier_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Weapon_Fire_Rate_Multiplier",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Infinite_Ammo",
+			"title": "Infinite_Ammo_title",
+			"description": "Infinite_Ammo_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Infinite_Ammo",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "melee_range",
+			"title": "melee_range_title",
+			"description": "melee_range_desc",
+			"callback": "settings_callback_toggle",
+			"value": "melee_range",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "melee_charge",
+			"title": "melee_charge_title",
+			"description": "melee_charge_desc",
+			"callback": "settings_callback_toggle",
+			"value": "melee_charge",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "melee_no_delay",
+			"title": "melee_no_delay_title",
+			"description": "melee_no_delay_desc",
+			"callback": "settings_callback_toggle",
+			"value": "melee_no_delay",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 25
+		},
+		{
+			"type": "multiple_choice",
+			"id": "Stealth_Menu_Config_func",
+			"title": "",
+			"description": "Stealth_Menu_Config_func",
+			"items": [
+				"Stealth_Menu_Config_func"
+			],
+			"value": "Stealth_Menu_Config_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Stealth_Menu_Config",
+			"title": "Stealth_Menu_Config_title",
+			"description": "Stealth_Menu_Config_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Stealth_Menu_Config",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Cops_Dont_Shoot",
+			"title": "Cops_Dont_Shoot_title",
+			"description": "global_host",
+			"callback": "settings_callback_toggle",
+			"value": "Cops_Dont_Shoot",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Disable_Cameras",
+			"title": "Disable_Cameras_title",
+			"description": "global_host",
+			"callback": "settings_callback_toggle",
+			"value": "Disable_Cameras",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Disable_Pagers",
+			"title": "Disable_Pagers_title",
+			"description": "Disable_Pagers_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Disable_Pagers",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Civ_Kills",
+			"title": "Free_Civ_Kills_title",
+			"description": "Free_Civ_Kills_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Civ_Kills",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "No_Pager_Dominate",
+			"title": "No_Pager_Dominate_title",
+			"description": "global_host",
+			"callback": "settings_callback_toggle",
+			"value": "No_Pager_Dominate",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "No_Panic",
+			"title": "No_Panic_title",
+			"description": "global_host",
+			"callback": "settings_callback_toggle",
+			"value": "No_Panic",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Dont_Call_Police",
+			"title": "Dont_Call_Police_title",
+			"description": "global_host",
+			"callback": "settings_callback_toggle",
+			"value": "Dont_Call_Police",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Lobotimize_AI",
+			"title": "Lobotimize_AI_title",
+			"description": "global_host",
+			"callback": "settings_callback_toggle",
+			"value": "Lobotimize_AI",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Random_Pagers",
+			"title": "Random_Pagers_title",
+			"description": "global_host",
+			"callback": "settings_callback_toggle",
+			"value": "Random_Pagers",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Steal_Pagers",
+			"title": "steal_pagers_on_melee",
+			"description": "steal_pagers_on_melee_help",
+			"callback": "settings_callback_toggle",
+			"value": "Steal_Pagers",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 25
+		}
+	]
+}

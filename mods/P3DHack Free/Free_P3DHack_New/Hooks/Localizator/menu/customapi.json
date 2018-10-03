@@ -1,0 +1,20 @@
+{
+	"menu_id" : "p3dtext_options_customapi_function",
+	"parent_menu_id" : "p3dtext_options_menu",
+	"title" : "customapi_function",
+	"back_callback" : "p3dtext_menu",
+	"items" :
+	[
+		{
+			"type" : "multiple_choice"
+			"id" : "global_premium"
+			"title" : ""
+			"description" : "global_premium"
+			"items" : [
+				"global_premium"
+			],
+			"value" : "global_premium"
+			"default_value" : false
+		}
+	]
+}

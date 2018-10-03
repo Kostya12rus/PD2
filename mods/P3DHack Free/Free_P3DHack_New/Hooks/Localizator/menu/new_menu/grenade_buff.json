@@ -1,0 +1,76 @@
+{
+	"menu_id": "p3dtext_options_grenade_buff_functions",
+	"parent_menu_id": "p3dtext_options_NewMenu_function",
+	"title": "grenade_buff_func",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "grenade_buff_func",
+			"title": "",
+			"description": "grenade_buff_func",
+			"items": [
+				"grenade_buff_func"
+			],
+			"value": "grenade_buff_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Grenade_Buff",
+			"title": "Grenade_Buff_title",
+			"description": "Grenade_Buff_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Grenade_Buff",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "slider",
+			"id": "Grenade_Buff_Damage_Amount",
+			"title": "Grenade_Buff_Damage_Amount_title",
+			"description": "Grenade_Buff_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Grenade_Buff_Damage_Amount",
+			"default_value": 300,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Grenade_Buff_Player_Damage_Amount",
+			"title": "Grenade_Buff_Player_Damage_Amount_title",
+			"description": "Grenade_Buff_Player_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Grenade_Buff_Player_Damage_Amount",
+			"default_value": 0,
+			"max": 100,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Grenade_Buff_Range_Amount",
+			"title": "Grenade_Buff_Range_Amount_title",
+			"description": "Grenade_Buff_Range_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Grenade_Buff_Range_Amount",
+			"default_value": 1200,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

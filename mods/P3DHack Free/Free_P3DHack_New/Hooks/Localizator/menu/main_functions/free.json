@@ -1,0 +1,113 @@
+{
+	"menu_id": "p3dtext_options_free",
+	"parent_menu_id": "p3dtext_options_main_function",
+	"title": "Free_function",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "Free",
+			"title": "",
+			"description": "Free_function",
+			"items": [
+				"Free_function"
+			],
+			"value": "Free_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Favors",
+			"title": "Favors_title",
+			"description": "Favors_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Favors",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Assets",
+			"title": "Free_Assets_title",
+			"description": "Free_Assets_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Assets",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Casino",
+			"title": "Free_Casino_title",
+			"description": "Free_Casino_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Casino",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Contracts",
+			"title": "Free_Contracts_title",
+			"description": "Free_Contracts_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Contracts",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Masks",
+			"title": "Free_Masks_title",
+			"description": "Free_Masks_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Masks",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_PrePlanning",
+			"title": "Free_PrePlanning_title",
+			"description": "Free_PrePlanning_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_PrePlanning",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Skills",
+			"title": "Free_Skills_title",
+			"description": "Free_Skills_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Skills",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Slots",
+			"title": "Free_Slots_title",
+			"description": "Free_Slots_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Slots",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Weapons",
+			"title": "Free_Weapons_title",
+			"description": "Free_Weapons_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Weapons",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Free_Weapon_Mods",
+			"title": "Free_Weapon_Mods_title",
+			"description": "Free_Weapon_Mods_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Free_Weapon_Mods",
+			"default_value": true
+		}
+	]
+}

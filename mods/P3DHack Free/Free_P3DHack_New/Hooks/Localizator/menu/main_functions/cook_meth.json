@@ -1,0 +1,61 @@
+{
+	"menu_id": "p3dtext_options_cookfaster",
+	"parent_menu_id": "p3dtext_options_main_function",
+	"title": "CookMeth_function",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "CookMeth",
+			"title": "",
+			"description": "CookMeth_function",
+			"items": [
+				"CookMeth_function"
+			],
+			"value": "CookMeth_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Rats_Message",
+			"title": "Rats_Message_title",
+			"description": "Rats_Message_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Rats_Message",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Delay_func",
+			"title": "Delay_func_title",
+			"description": "Delay_func_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Delay_func",
+			"default_value": true
+		},
+		{
+			"type": "slider",
+			"id": "Delay",
+			"title": "Delay_title",
+			"description": "Delay_desc",
+			"callback": "settings_callback",
+			"value": "Delay",
+			"default_value": 1,
+			"max": 45,
+			"min": 1,
+			"step": 1
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

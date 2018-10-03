@@ -1,0 +1,190 @@
+{
+	"menu_id": "p3dtext_options_hud_function",
+	"parent_menu_id": "p3dtext_options_menu",
+	"title": "hud_function",
+	"back_callback": "p3dtext_menu",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "hud",
+			"title": "",
+			"description": "hud_function",
+			"items": [
+				"hud_function"
+			],
+			"value": "hud_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Crosshair",
+			"title": "Crosshair_title",
+			"description": "Crosshair_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Crosshair",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "mod_list_lite",
+			"title": "mod_list_lite_title",
+			"description": "mod_list_lite_desc",
+			"callback": "settings_callback_toggle",
+			"value": "mod_list_lite",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "hide_p3dhack_menu",
+			"title": "hide_p3dhack_menu_title",
+			"description": "hide_p3dhack_menu_desc",
+			"callback": "settings_callback_toggle",
+			"value": "hide_p3dhack_menu",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "hide_text",
+			"title": "hide_text_title",
+			"description": "hide_text_desc",
+			"callback": "settings_callback_toggle",
+			"value": "hide_text",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 25
+		},
+		{
+			"type": "multiple_choice",
+			"id": "Hide_Functions",
+			"title": "",
+			"description": "Hide_Functions",
+			"items": [
+				"Hide_Functions"
+			],
+			"value": "Hide_Functions",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "hide_func",
+			"title": "hide_func_title",
+			"description": "hide_func_desc",
+			"callback": "settings_callback_toggle",
+			"value": "hide_func",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "hide_smoke",
+			"title": "hide_smoke_title",
+			"description": "hide_smoke_desc",
+			"callback": "settings_callback_toggle",
+			"value": "hide_smoke",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "hide_logo",
+			"title": "hide_logo_title",
+			"description": "hide_logo_desc",
+			"callback": "settings_callback_toggle",
+			"value": "hide_logo",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "hide_pattern",
+			"title": "hide_pattern_title",
+			"description": "hide_pattern_desc",
+			"callback": "settings_callback_toggle",
+			"value": "hide_pattern",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "hide_particles",
+			"title": "hide_particles_title",
+			"description": "hide_particles_desc",
+			"callback": "settings_callback_toggle",
+			"value": "hide_particles",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 25
+		},
+		{
+			"type": "multiple_choice",
+			"id": "Skip_Functions",
+			"title": "",
+			"description": "Skip_Functions",
+			"items": [
+				"Skip_Functions"
+			],
+			"value": "Skip_Functions",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Skip_Press",
+			"title": "Skip_Press_title",
+			"description": "Skip_Press_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Skip_Press",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Dropin_Pause_Remove",
+			"title": "Dropin_Pause_Remove_title",
+			"description": "Dropin_Pause_Remove_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Dropin_Pause_Remove",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Skip_End_Screen",
+			"title": "Skip_End_Screen_title",
+			"description": "Skip_End_Screen_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Skip_End_Screen",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "Auto_Pick_Card",
+			"title": "Auto_Pick_Card_title",
+			"description": "Auto_Pick_Card_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Auto_Pick_Card",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

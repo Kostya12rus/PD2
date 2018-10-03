@@ -1,4 +1,0 @@
-Переписать спавн меню
-Убрать комент на 118 строке в InGameAuto.lua
-CustomMenuClass.lua:1006: attempt to index a nil value
-Добавить не достающих кнопок

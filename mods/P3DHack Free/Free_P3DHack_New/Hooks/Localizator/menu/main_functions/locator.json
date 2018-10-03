@@ -1,0 +1,149 @@
+{
+	"menu_id": "p3dtext_options_locator",
+	"parent_menu_id": "p3dtext_options_main_function",
+	"title": "locator_function",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "Locator",
+			"title": "",
+			"description": "locator_function",
+			"items": [
+				"locator_function"
+			],
+			"value": "locator_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showDistance",
+			"title": "waypoints_showDistance",
+			"description": "waypoints_showDistance_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showDistance",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showGagePickups",
+			"title": "waypoints_showGagePickups",
+			"description": "waypoints_showGagePickups_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showGagePickups",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showPlanks",
+			"title": "waypoints_showPlanks",
+			"description": "waypoints_showPlanks_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showPlanks",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showSmallLoot",
+			"title": "waypoints_showSmallLoot",
+			"description": "waypoints_showSmallLoot_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showSmallLoot",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showCrates",
+			"title": "waypoints_showCrates",
+			"description": "waypoints_showCrates_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showCrates",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showDoors",
+			"title": "waypoints_showDoors",
+			"description": "waypoints_showDoors_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showDoors",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showCameraComputers",
+			"title": "waypoints_showCameraComputers",
+			"description": "waypoints_showCameraComputers_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showCameraComputers",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showDrills",
+			"title": "waypoints_showDrills",
+			"description": "waypoints_showDrills_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showDrills",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showThermite",
+			"title": "waypoints_showThermite",
+			"description": "waypoints_showThermite_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showThermite",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showSewerManhole",
+			"title": "waypoints_showSewerManhole",
+			"description": "waypoints_showSewerManhole_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showSewerManhole",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_showHUDMessages",
+			"title": "waypoints_showHUDMessages",
+			"description": "waypoints_showHUDMessages_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_showHUDMessages",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_makeNoise",
+			"title": "waypoints_makeNoise",
+			"description": "waypoints_makeNoise_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_makeNoise",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_iterativeToggle",
+			"title": "waypoints_iterativeToggle",
+			"description": "waypoints_iterativeToggle_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_iterativeToggle",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "waypoints_sheaterNewb",
+			"title": "waypoints_sheaterNewb",
+			"description": "waypoints_sheaterNewb_desc",
+			"callback": "settings_callback_toggle",
+			"value": "waypoints_sheaterNewb",
+			"default_value": true
+		}
+	]
+}

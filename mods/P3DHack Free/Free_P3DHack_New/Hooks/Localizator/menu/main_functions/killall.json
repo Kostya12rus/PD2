@@ -1,0 +1,59 @@
+{
+	"menu_id": "p3dtext_options_killall",
+	"parent_menu_id": "p3dtext_options_main_function",
+	"title": "killall_func",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "killall_func",
+			"title": "",
+			"description": "killall_func",
+			"items": [
+				"killall_func"
+			],
+			"value": "killall_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "IgnoreCivilians",
+			"title": "IgnoreCivilians_title",
+			"description": "IgnoreCivilians_desc",
+			"callback": "settings_callback_toggle",
+			"value": "IgnoreCivilians",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "IgnoreCameras",
+			"title": "IgnoreCameras_title",
+			"description": "IgnoreCameras_desc",
+			"callback": "settings_callback_toggle",
+			"value": "IgnoreCameras",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "IgnoreEnemies",
+			"title": "IgnoreEnemies_title",
+			"description": "IgnoreEnemies_desc",
+			"callback": "settings_callback_toggle",
+			"value": "IgnoreEnemies",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "NoBagBodies",
+			"title": "NoBagBodies_title",
+			"description": "NoBagBodies_desc",
+			"callback": "settings_callback_toggle",
+			"value": "NoBagBodies",
+			"default_value": true
+		}
+	]
+}

@@ -1,0 +1,88 @@
+{
+	"menu_id": "p3dtext_options_molotov_functions",
+	"parent_menu_id": "p3dtext_options_NewMenu_function",
+	"title": "molotov_func",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "molotov_func",
+			"title": "",
+			"description": "molotov_func",
+			"items": [
+				"molotov_func"
+			],
+			"value": "molotov_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Molotov_Buff",
+			"title": "Molotov_Buff_title",
+			"description": "Molotov_Buff_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Molotov_Buff",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "slider",
+			"id": "Molotov_Buff_Damage_Amount",
+			"title": "Molotov_Buff_Damage_Amount_title",
+			"description": "Molotov_Buff_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Molotov_Buff_Damage_Amount",
+			"default_value": 2000,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Molotov_Buff_Player_Damage_Amount",
+			"title": "Molotov_Buff_Player_Damage_Amount_title",
+			"description": "Molotov_Buff_Player_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Molotov_Buff_Player_Damage_Amount",
+			"default_value": 0,
+			"max": 100,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Molotov_Buff_Range_Amount",
+			"title": "Molotov_Buff_Range_Amount_title",
+			"description": "Molotov_Buff_Range_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Molotov_Buff_Range_Amount",
+			"default_value": 1000,
+			"max": 1000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Molotov_Buff_Burn_Duration_Amount",
+			"title": "Molotov_Buff_Burn_Duration_Amount_title",
+			"description": "Molotov_Buff_Burn_Duration_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Molotov_Buff_Burn_Duration_Amount",
+			"default_value": 30,
+			"max": 1000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"menu_id": "p3dtext_options_Incendiary_Grenade_Buff_functions",
+	"parent_menu_id": "p3dtext_options_NewMenu_function",
+	"title": "Incendiary_Grenade_Buff_func",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "Incendiary_Grenade_Buff_func",
+			"title": "",
+			"description": "Incendiary_Grenade_Buff_func",
+			"items": [
+				"Incendiary_Grenade_Buff_func"
+			],
+			"value": "Incendiary_Grenade_Buff_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Incendiary_Grenade_Buff",
+			"title": "Incendiary_Grenade_Buff_title",
+			"description": "Incendiary_Grenade_Buff_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Incendiary_Grenade_Buff",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "slider",
+			"id": "Incendiary_Grenade_Buff_Damage_Amount",
+			"title": "Incendiary_Grenade_Buff_Damage_Amount_title",
+			"description": "Incendiary_Grenade_Buff_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Incendiary_Grenade_Buff_Damage_Amount",
+			"default_value": 2000,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Incendiary_Grenade_Buff_Player_Damage_Amount",
+			"title": "Incendiary_Grenade_Buff_Player_Damage_Amount_title",
+			"description": "Incendiary_Grenade_Buff_Player_Damage_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Incendiary_Grenade_Buff_Player_Damage_Amount",
+			"default_value": 0,
+			"max": 100,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Incendiary_Grenade_Buff_Range_Amount",
+			"title": "Incendiary_Grenade_Buff_Range_Amount_title",
+			"description": "Incendiary_Grenade_Buff_Range_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Incendiary_Grenade_Buff_Range_Amount",
+			"default_value": 2000,
+			"max": 10000,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Incendiary_Grenade_Buff_Burn_Duration_Amount",
+			"title": "Incendiary_Grenade_Buff_Burn_Duration_Amount_title",
+			"description": "Incendiary_Grenade_Buff_Burn_Duration_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Incendiary_Grenade_Buff_Burn_Duration_Amount",
+			"default_value": 10,
+			"max": 100,
+			"min": 0,
+			"step": 10
+		},
+		{
+			"type": "slider",
+			"id": "Incendiary_Grenade_Buff_Time_Amount",
+			"title": "Incendiary_Grenade_Buff_Time_Amount_title",
+			"description": "Incendiary_Grenade_Buff_Time_Amount_desc",
+			"callback": "settings_callback",
+			"value": "Incendiary_Grenade_Buff_Time_Amount",
+			"default_value": 2.5,
+			"max": 10,
+			"min": 0,
+			"step": 0.5
+		},
+		{
+			"type": "divider",
+			"size": 5
+		}
+	]
+}

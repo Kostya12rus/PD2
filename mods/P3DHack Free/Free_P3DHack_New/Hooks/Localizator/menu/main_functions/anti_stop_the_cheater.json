@@ -1,0 +1,41 @@
+{
+	"menu_id": "p3dtext_options_antistopthecheater",
+	"parent_menu_id": "p3dtext_options_main_function",
+	"title": "antistopthecheater_function",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "antistopthecheater",
+			"title": "",
+			"description": "antistopthecheater_function",
+			"items": [
+				"antistopthecheater_function"
+			],
+			"value": "antistopthecheater_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "antistop",
+			"title": "antistop_title",
+			"description": "antistop_desc",
+			"callback": "settings_callback_toggle",
+			"value": "antistop",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "antistop_info",
+			"title": "antistop_info_title",
+			"description": "antistop_info_desc",
+			"callback": "settings_callback_toggle",
+			"value": "antistop_info",
+			"default_value": false
+		}
+	]
+}

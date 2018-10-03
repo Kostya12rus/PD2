@@ -1,0 +1,63 @@
+{
+	"menu_id": "p3dtext_options_bullet_penetration",
+	"parent_menu_id": "p3dtext_options_main_function",
+	"title": "Bullet_Penetration_func",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "Bullet_Penetration_func",
+			"title": "",
+			"description": "Bullet_Penetration_func",
+			"items": [
+				"Bullet_Penetration_func"
+			],
+			"value": "Bullet_Penetration_func",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "Bullet_Penetration",
+			"title": "Bullet_Penetration_title",
+			"description": "Bullet_Penetration_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Bullet_Penetration",
+			"default_value": true
+		},
+		{
+			"type": "divider",
+			"size": 10
+		},
+		{
+			"type": "toggle",
+			"id": "Bullet_Penetration_Shield",
+			"title": "Bullet_Penetration_Shield_title",
+			"description": "Bullet_Penetration_Shield_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Bullet_Penetration_Shield",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Bullet_Penetration_Enemy",
+			"title": "Bullet_Penetration_Enemy_title",
+			"description": "Bullet_Penetration_Enemy_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Bullet_Penetration_Enemy",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "Bullet_Penetration_Wall",
+			"title": "Bullet_Penetration_Wall_title",
+			"description": "Bullet_Penetration_Wall_desc",
+			"callback": "settings_callback_toggle",
+			"value": "Bullet_Penetration_Wall",
+			"default_value": true
+		}
+	]
+}

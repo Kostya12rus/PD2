@@ -1,0 +1,79 @@
+{
+	"menu_id": "p3dtext_options_aim",
+	"parent_menu_id": "p3dtext_options_main_function",
+	"title": "change_aim_function",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "change_statistic",
+			"title": "",
+			"description": "change_aim_function",
+			"items": [
+				"change_aim_function"
+			],
+			"value": "change_aim_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "multiple_choice",
+			"id": "AimMode",
+			"title": "AimMode_title",
+			"description": "AimMode_desc",
+			"callback": "settings_callback",
+			"items": [
+				"aim_type_1",
+				"aim_type_2",
+				"aim_type_3"
+			],
+			"value": "AimMode",
+			"default_value": 3
+		},
+		{
+			"type": "toggle",
+			"id": "RightClick",
+			"title": "RightClick_title",
+			"description": "RightClick_desc",
+			"callback": "settings_callback_toggle",
+			"value": "RightClick",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "AimbotInfAmmo",
+			"title": "AimbotInfAmmo_title",
+			"description": "AimbotInfAmmo_desc",
+			"callback": "settings_callback_toggle",
+			"value": "AimbotInfAmmo",
+			"default_value": false
+		},
+		{
+			"type": "slider",
+			"id": "AimbotDamageMul",
+			"title": "AimbotDamageMul_title",
+			"description": "AimbotDamageMul_desc",
+			"callback": "settings_callback",
+			"value": "AimbotDamageMul",
+			"default_value": 2,
+			"max": 50,
+			"min": 1,
+			"step": 1
+		},
+		{
+			"type": "slider",
+			"id": "MaxAimDist",
+			"title": "MaxAimDist_title",
+			"description": "MaxAimDist_desc",
+			"callback": "settings_callback",
+			"value": "MaxAimDist",
+			"default_value": 5000,
+			"max": 10000,
+			"min": 250,
+			"step": 250
+		}
+	]
+}

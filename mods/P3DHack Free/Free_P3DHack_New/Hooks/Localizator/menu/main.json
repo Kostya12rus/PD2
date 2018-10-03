@@ -1,0 +1,155 @@
+{
+	"menu_id": "p3dtext_options_menu",
+	"parent_menu_id": "blt_options",
+	"title": "p3dtext_options",
+	"back_callback": "settings_save",
+	"items": [
+		{
+			"type": "multiple_choice",
+			"id": "Language_text",
+			"title": "",
+			"description": "",
+			"items": [
+				"Language_text"
+			],
+			"value": "Language_text",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "multiple_choice",
+			"id": "p3dtext_language",
+			"title": "p3dtext_language_title",
+			"description": "p3dtext_language_desc",
+			"callback": "p3dtext_language_callback",
+			"items": [
+				"p3dtext_language_english",
+				"p3dtext_language_french",
+				"p3dtext_language_russian",
+				"p3dtext_language_german",
+				"p3dtext_language_spanish",
+				"p3dtext_language_portuguese",
+				"p3dtext_language_zn_ch",
+				"p3dtext_language_custom"
+			],
+			"value": "P3D_language",
+			"default_value": 1
+		},
+		{
+			"type": "divider",
+			"size": 25
+		},
+		{
+			"type": "multiple_choice",
+			"id": "Fast",
+			"title": "",
+			"description": "fast_function",
+			"items": [
+				"fast_function"
+			],
+			"value": "fast_function",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "toggle",
+			"id": "dlc",
+			"title": "dlc_title",
+			"description": "dlc_desc",
+			"callback": "settings_callback_toggle",
+			"value": "dlc",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "skin",
+			"title": "skin_title",
+			"description": "skin_desc",
+			"callback": "settings_callback_toggle",
+			"value": "skin",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "skin_armor",
+			"title": "skin_armor_title",
+			"description": "skin_armor_desc",
+			"callback": "settings_callback_toggle",
+			"value": "skin_armor",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "specific_weapons_unlocker",
+			"title": "specific_weapons_unlocker_title",
+			"description": "specific_weapons_unlocker_desc",
+			"callback": "settings_callback_toggle",
+			"value": "specific_weapons_unlocker",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "multiple_choice",
+			"id": "hider_text",
+			"title": "",
+			"description": "",
+			"items": [
+				"hider_text"
+			],
+			"value": "hider_text",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 5
+		},
+		{
+			"type": "multiple_choice",
+			"id": "hider_type",
+			"title": "hider_type_title",
+			"description": "hider_type_desc",
+			"callback": "settings_callback",
+			"items": [
+				"global_premium",
+				"All"
+			],
+			"value": "hider_type",
+			"default_value": 1
+		},
+		{
+			"type": "divider",
+			"size": 25
+		},
+		{
+			"type": "button",
+			"id": "premium_buy",
+			"title": "premium_buy_title",
+			"description": "premium_buy_desc",
+			"callback": "premium_buy"
+		},
+		{
+			"type": "multiple_choice",
+			"id": "global_premium",
+			"title": "",
+			"description": "global_premium",
+			"items": [
+				"global_premium"
+			],
+			"value": "global_premium",
+			"default_value": false
+		},
+		{
+			"type": "divider",
+			"size": 10
+		}
+	]
+}
